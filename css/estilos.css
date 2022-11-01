@@ -1,0 +1,502 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* Estilos del "Encabezado de la página" */
+
+.encabezado_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgb(245, 245, 245);
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo_adaitw{
+    margin-left: 4.5em;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(238, 72, 188);
+    text-decoration: none;
+} 
+
+nav{
+    margin-right: 6.5em;
+}
+
+.nav-link{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0em 0.6em;
+}
+
+.nav-link:hover{
+    color:rgb(238, 72, 188); 
+}
+
+
+/*Estilos de la Seccion Principal "Ada ITW"*/
+
+.cont_adaitw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../assets/imagenes/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+.cont_adaitw h1{
+    font-size: 74px;
+    color: white;
+    text-align: center;
+    padding-top: 0.7em;
+    padding-bottom: 1em ;
+}
+
+.boton_aplica{
+    font-size:25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(233, 71, 184);
+    padding: 0.3em 1em;
+    border: 2px solid rgb(163,50,128);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px -3px rgb(46, 46, 46);
+    margin-top: 30em;
+}
+
+
+/* Estilos para la Seccion "Quienes Somos" */
+
+.cont_quienes {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 2em 1em;
+    min-height: 570px;
+}
+
+.texto_quienes{
+    margin-left: -3em;
+}
+.somos{
+    font-size: 33px;
+    text-align: left;
+}
+
+span{
+    font-weight: bold;
+    color:rgb(233, 66, 162);
+}
+
+.imagen_quienes{
+    width: 45vw;
+    clip-path: inset(0% 25% 0% 25%)
+}
+
+.historia_quienes{
+    text-align: left;
+    padding-top: 3em;
+    padding-right: 10em;
+    padding-bottom: 1.5em;
+}
+
+
+/*Estilos para la seccion "Nuestros Programas*/
+
+.cont_nuestros{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    min-height: 570px;
+}
+
+.cont_nuestros h3{
+    font-size: 53px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    padding: 1.2em 0em;
+}
+
+.tarjetas_flex{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content:center;
+}
+
+.tarjeta{
+    width: 22vw;
+    height: 58vh;
+    border-radius: 15px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 4.5em;
+    background-color: rgb(50, 50, 50);
+}
+
+.titulo_programador{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top:11em;
+    padding-bottom: 2em;
+    padding-left: 1.9em;
+    padding-right: 1.9em;
+}
+
+.boton_info{
+    font-size:18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(233, 71, 184);
+    padding: 0.4em 1.6em;
+    border: 2px solid rgb(163,50,128);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px -3px rgb(46, 46, 46);
+    margin-top: 10em;
+}
+
+.tarjeta_imagen_front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../assets/imagenes/front-end-cropped.jpg);
+    background-size: 102% 102%;
+    background-repeat: no-repeat;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px;
+}
+
+.tarjeta_imagen_stack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../assets/imagenes/full-stack-cropped.jpg);
+    background-size: 102% 102%;
+    background-repeat: no-repeat;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px;
+}
+
+.tarjeta_imagen_python{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../assets/imagenes/logo_python.png);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px;
+}
+
+.tarjeta_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo_info {
+    color: white;
+    font-size: 16.5px;
+    text-align: center;
+    padding: 0em 3em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+
+/* Estilos de la seccion "Características" */
+
+.cont_caracteristicas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: rgb(255, 255, 255);
+    min-height: 540px;
+}
+
+ul{
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+
+li {
+    font-size: 17px;
+    font-weight: bold;
+    line-height:2.1em ;
+    list-style-image: url(../assets/imagenes/check_16.png);
+    list-style-position: inside;
+}
+
+.imagen_caracteristicas{
+    width: 27vw;
+    height: 43vh;
+}
+
+/* Estilos de la seccion "Listas para programar?" */
+
+.cont_lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(233, 97, 181);
+    min-height: 540px;
+}
+
+.cont_lista h2{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+/* Estilos del Pie de Página */
+
+.cont_pie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
+    background-color: rgb(230, 230, 230);
+    min-height: 130px;
+}
+
+.cont_pie h5{
+    font-size: 18px;
+    font-weight: lighter;
+    color:rgb(131, 131, 131);
+    padding-bottom: 0.5em;
+}
+
+.cont_pie h6{
+    font-size: 12px;
+    font-weight: lighter;
+    color:rgb(131, 131, 131);
+    padding-bottom: 0.5em;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 613px) {
+
+/*Estilos del Encabezado*/
+
+    .encabezado_flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 170px;
+        
+    }
+
+    .logo_adaitw{
+        font-size: 23px;
+        padding-top:0.1em;
+        padding-bottom: 0.8em;
+        margin-left: 0em;
+
+    } 
+
+    nav{
+        margin: 0em 0em;
+    }
+    
+    .nav-link{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        padding: 0.4em 0em;
+    }
+
+    
+/* MQ Estilos Seccion Principal "Ada ITW" */
+
+    .cont_adaitw{
+        height: 100vh;
+        background:linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../assets/imagenes/hero.jpg);
+        background-size: 175% 80%;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 124%;
+        margin-bottom: 5em;
+    }
+
+    .cont_adaitw h1{
+        font-size: 49px;
+        padding-top: 1.8em;
+        padding-bottom: 1em ;
+        margin-top: 3em;
+    }
+
+    .boton_aplica{
+        margin-bottom:2em;
+    }
+
+    
+/* MQ Estilos Seccion "Quienes Somos" */
+
+    .texto_quienes{
+        margin-left: 0em;
+    }
+
+    .somos{
+        text-align:center;
+    }
+
+    .imagen_quienes{
+        display: none;
+    }
+
+    .historia_quienes{
+        text-align: center;
+        padding-right: 0em;
+        padding-bottom: 1.5em;
+    }
+
+
+/* MQ Estilos Seccion "Nuestros Programas" */
+
+    .cont_nuestros {
+        padding-bottom: 8em;
+    }
+
+    .cont_nuestros h3{
+        font-size: 48px;
+        padding-top:2.9em;
+        padding-bottom:0.7em ;
+    }
+
+    .tarjetas_flex{
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        width: 73vw;
+        height: 37vh;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-bottom: 1.7em;
+        background-color: aliceblue;
+    }
+
+    .tarjeta_imagen_front{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../assets/imagenes/front-end.jpg);
+        background-size:105% 100%;
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+        border-bottom-left-radius:15px;
+        border-bottom-right-radius:15px;
+    }
+    
+    .tarjeta_imagen_stack{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../assets/imagenes/full-stack.jpg);
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius:15px;
+    }
+
+    .tarjeta_imagen_python{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../assets/imagenes/python.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-bottom-left-radius:15px ;
+        border-bottom-right-radius:15px;
+    }
+
+    .parrafo_info {
+        display: none;
+    }
+
+    .titulo_programador{
+        font-size: 27px;
+        padding-top:1em;
+        padding-bottom: 0.7em;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
+    
+    .boton_info{
+        margin-top: 0.7em;
+    }
+
+
+/* MQ Estilos Seccion "Características" */
+
+    .cont_caracteristicas{
+        justify-content:center;
+        min-height: 640px;
+    }
+
+    ul{
+        list-style-type: none;
+        padding-bottom: 0em;
+        
+    }
+
+    li {
+        font-size: 18px;
+        text-align: center;
+        line-height:2.2em ;
+        list-style-image: url(../assets/imagenes/check_16.png);
+        
+    }
+
+    .imagen_caracteristicas{
+        display: none;
+    }
+
+    /*MQ Estilos Pie de Página*/
+
+    .cont_lista h2{
+        font-size: 40px;
+        padding-bottom: 1em;
+    }
+    
+  }
+
+
